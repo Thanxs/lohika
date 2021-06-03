@@ -1,0 +1,18 @@
+{
+  "targets": {
+    "angular-blog-4a351": {
+      "hosting": {
+        "lohika": [
+          "angular-blog-4a351"
+        ]
+      }
+    },
+    "lohika-3e8c6": {
+      "hosting": {
+        "lohika": [
+          "lohika-3e8c6"
+        ]
+      }
+    }
+  }
+}
