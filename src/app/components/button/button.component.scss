@@ -1,0 +1,48 @@
+@import "../../shared/variables";
+
+.button {
+  text-transform: uppercase;
+  background: linear-gradient($dark_blue, $main_color);
+  display: inline-block;
+  padding: 0 35px;
+  font: 1.25rem/50px LatoBold, Tahoma, Helvetica, Arial, sans-serif;
+  border: none;
+  text-decoration: none;
+  color: #ffffff;
+  position: relative;
+  transition: all 0.4s;
+  white-space: nowrap;
+  text-align: center;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    box-sizing: border-box;
+    background-color: $background_color;
+    transition: all 0.4s;
+    transform: scale(0.5, 1);
+    border: 1px solid $dark_blue;
+  }
+
+  &:hover {
+    color: $dark_blue;
+
+    &::before {
+      opacity: 1;
+      transform: scale(1, 1);
+    }
+  }
+
+  span {
+    position: relative;
+    z-index: 2;
+  }
+}

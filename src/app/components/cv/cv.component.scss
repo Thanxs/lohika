@@ -1,0 +1,161 @@
+@import "../../shared/variables";
+
+.cv {
+  padding: 20px;
+
+  &__container {
+    max-width: $container;
+    margin: 0 auto;
+  }
+
+  &__header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-transfer {
+      position: absolute;
+      top: 0;
+      right: 0;
+      opacity: 0.5;
+      transition: all 0.4s ease-in-out;
+      transform: scale(0.5);
+
+      &:hover {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    &-title {
+      flex-grow: 1;
+      font-size: 22px;
+      font-weight: 600;
+      margin-left: 40px;
+      padding: 15px 15px 15px 0;
+      border-bottom: 3px solid $main_color;
+    }
+
+    &-photo {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      background-color: $background_color;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+    }
+
+    &-name {
+      color: $main_color;
+    }
+  }
+
+  &__info {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-bottom: 2px solid $main_color;
+
+    &-title {
+      @include title;
+    }
+  }
+
+  &__education,
+  &__work,
+  &__hard-skills,
+  &__soft-skills {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid $main_color;
+
+    &-title {
+      @include title;
+    }
+
+    &-list {
+      list-style: none;
+      padding: 10px 0;
+      margin: 0;
+    }
+
+    &-item {
+      display: grid;
+      grid-template-columns: minmax(100px, 200px) 1fr;
+      grid-gap: 30px;
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &-name {
+        color: $main_color;
+        font-weight: 600;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          color: lighten($main_color, 10);
+        }
+      }
+    }
+  }
+
+  &__hard-skills,
+  &__soft-skills {
+    &-description {
+      padding: 10px 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      grid-gap: 20px;
+    }
+  }
+
+  &__soft-skills {
+    border-bottom: 0;
+  }
+}
+
+@media screen and (max-width: $small) {
+  .cv {
+    padding: 10px;
+
+    &__header {
+      padding-top: 70px;
+      flex-direction: column;
+
+      &-title {
+        text-align: center;
+        margin-left: 0;
+        padding: 15px;
+      }
+
+      &-photo {
+        margin-bottom: 20px;
+      }
+    }
+
+    &__work, &__education {
+      &-item {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        margin-bottom: 25px;
+
+        &-name {
+          text-align: center;
+        }
+      }
+    }
+
+    &__hard-skills, &__soft-skills {
+      &-description {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}

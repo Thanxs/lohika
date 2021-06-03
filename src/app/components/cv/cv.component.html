@@ -1,0 +1,162 @@
+<div class="cv" (scroll)="onScroll()">
+  <div class="cv__container">
+    <div class="cv__header">
+      <div class="cv__header-photo">
+        <img src="./assets/images/avatar.jpg" alt="avatar" />
+      </div>
+      <div class="cv__header-title">
+        <div class="cv__header-transfer" *ngIf="!isHidden">
+          <app-button text="Back" [route]="['/']"></app-button>
+        </div>
+        <div class="cv__header-name">Oleksandr Nikolskyi</div>
+        <div class="cv__header-position">Front End Developer</div>
+      </div>
+    </div>
+
+    <div class="cv__info">
+      <h2 class="cv__info-title">Summary</h2>
+      <div class="cv__info-description">
+        <p class="cv__info-description-item">
+          I am a Front End Developer. I create responsive websites that allow
+          the user to experience your website in the best and most appropriate
+          way suited to the device they are using.
+        </p>
+        <p class="cv__info-description-item">
+          I was born and live in the beautiful city of Odessa. Actually, my life
+          is incredibly interesting. I visited various parts of the world,
+          talked with people of different nationalities, learned the cultures of
+          different nations. I always maintain my body in great shape, because I
+          prefer an active lifestyle and sports. I began to study programming on
+          my own. This area of ​​activity attracted me with the fact that you
+          are constantly learning and in any case, your brain is in a constant
+          tone. An elementary desire to develop is my main motivation, and
+          without a constant influx of new knowledge I feel uneasy. The only
+          person you need to be better is you yesterday.
+        </p>
+      </div>
+    </div>
+
+    <div class="cv__work">
+      <h2 class="cv__work-title">
+        Work experience
+      </h2>
+      <ul class="cv__work-list">
+        <li class="cv__work-item">
+          <div class="cv__work-item-name">
+            HYS Enterprise, Front end Developer (Angular) (10-2020 - present)
+          </div>
+          <div class="cv__work-item-description">
+            Development of functionality for a huge international company
+          </div>
+        </li>
+        <li class="cv__work-item">
+          <div class="cv__work-item-name">
+            Hillel IT School, Front end Developer (Angular) (01-2020 - 10-2020)
+          </div>
+          <div class="cv__work-item-description">
+            Development of an internal product of the school - LMS - a platform
+            for interaction between teacher and student
+          </div>
+        </li>
+        <li class="cv__work-item">
+          <div class="cv__work-item-name">
+            Carnival Cruise Lines, Ordinary seaman (12-2016 - 07-2019)
+          </div>
+          <div class="cv__work-item-description">
+            Work under the supervision of bosun, maintenance of the ship in a
+            good conditions, take part in mooring operations
+          </div>
+        </li>
+        <li class="cv__work-item">
+          <div class="cv__work-item-name">
+            Boxing GYM "Captain" Personal trainer (04-2015 - 12-2016)
+          </div>
+          <div class="cv-__work-item-description">
+            Conducting individual training in Thai boxing for children and
+            adults
+          </div>
+        </li>
+        <li class="cv__work-item">
+          <div class="cv__work-item-name">
+            2nd Division of the State Executive Service of the Primorskyi
+            District (03-2013 - 04-2015)
+          </div>
+          <div class="cv__work-item-description">
+            Execution of the court decisions and other bodies and officials
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="cv__education">
+      <h2 class="cv__education-title">Education</h2>
+      <ul class="cv__education-list">
+        <li class="cv__education-item">
+          <div class="cv__education-item-name">IT School (2019)</div>
+          <div class="cv__education-item-description">
+            I successfully completed the courses of "Front end Pro" and
+            "Node.JS" in "Hillel IT School"
+          </div>
+        </li>
+        <li class="cv__education-item">
+          <div class="cv__education-item-name">University (2007 - 2012)</div>
+          <div class="cv__education-item-description">
+            National University "Odessa Law academy", Master of Law
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="cv__hard-skills">
+      <h2 class="cv__hard-skills-title">Professional hard skills</h2>
+      <div class="cv__hard-skills-description">
+        <div class="cv__hard-skills-description-item">
+          Strong knowledge in HTML5/CSS3
+        </div>
+        <div class="cv__hard-skills-description-item">
+          Strong knowledge of JavaScript (ES5-ES6+)
+        </div>
+        <div class="cv__hard-skills-description-item">
+          Strong knowledge of TypeScript
+        </div>
+        <div class="cv__hard-skills-description-item">
+          Strong knowledge of Angular 2+
+        </div>
+        <div class="cv__hard-skills-description-item">
+          Work experience with Angular Material
+        </div>
+        <div class="cv__hard-skills-description-item">
+          Work experience with Rxjs
+        </div>
+        <div class="cv__hard-skills-description-item">
+          Knowledge of React.JS
+        </div>
+        <div class="cv__hard-skills-description-item">
+          Knowledge and work experience with Node.JS and MongoDB
+        </div>
+        <div class="cv__hard-skills-description-item">
+          Upper-Intermediate English
+        </div>
+      </div>
+    </div>
+
+    <div class="cv__soft-skills">
+      <h2 class="cv__soft-skills-title">Soft skills</h2>
+      <div class="cv__soft-skills-description">
+        <div class="cv__soft-skills-description-item">
+          Devote my free time to self-development
+        </div>
+        <div class="cv__soft-skills-description-item">
+          Will check first if the answer to my question is in Google, then I’ll
+          ask my colleges and mentor
+        </div>
+        <div class="cv__soft-skills-description-item">
+          Proactive and ready for overtime
+        </div>
+        <div class="cv__soft-skills-description-item">
+          Self-organized and easygoing
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
